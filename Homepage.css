@@ -8,28 +8,13 @@
 			color: #2d2f31;
 		}
 		
-		10% {
+		50% {
 			
 			color: #b8c0c7;
 		}
-			20% {
+			50% {
         
         color: #2d2f31;
-      }
-      
-      30% {
-        
-        color: #7c868f;
-      }
-      
-      40% {
-        
-        color: #2d2f31;
-      }
-      
-      50% {
-        
-        color: #b8c0c7;
       }
       
 		}
@@ -57,21 +42,23 @@
 	}
 
 	.navbar-default {
-		background-color: #a5d6aa;
+		background-color: #00000044;
 		border-color: #e4f6ac;
 	}
 	.navbar-default .navbar-brand {
-		-webkit-animation:colorchange 20s infinite alternate;
+		-webkit-animation:colorchange 3s infinite alternate;
 	}
 	
 	.navbar-default .navbar-brand {	
-		font-size: 40px;
+		font-size: 30px;
 		font-family: 'Contrail One', cursive;
 		color: #fffefe;
 		position: absolute;
 		left: 40%;
 		text-align: center;
 		margin: 0 auto;
+		letter-spacing: 5px;					
+		
 	}
 
 
@@ -98,9 +85,15 @@
 	}
 
 	.navbar-form .form-control {
-		font-size: 20px;
+		font-size: 30px;
 		text-decoration: underline;
 		font-family: 'Contrail One', cursive;
+		}
+		.navbar-form  input{
+			letter-spacing: 5px;			
+			opacity: 0.5;
+			text-align:left;
+			
 		}
 
 	.navbar-form {
@@ -140,39 +133,51 @@
 	}
 
 	/*ENd of Navbar */
-
-	
-	/*  COLUMN SETUP  */
-	.row .box {
+	.jumbotron .btn{	
 		position: relative;
-		left: 20%;
-		display: block;
-		float:left;
-		margin: 2% 1px 1px 1%;
-	}
-	
-	/*  COLUMN SETUP  */
-	.row-under .box {
-		position: relative;
-		left: 20%;
-		display: block;
-		float:left;
-		margin: 6% 1px 1px 1%;
+		bottom: 1px;
+		right: 1px;
+		background-color: #ad8b8b3f;
+			
 	}
 
-	/*  COLUMN SETUP  */
-	.row-upper .box {
-		position: relative;
-		left: 20%;
-		display: block;
-		float:left;
-		margin: 6% 1px 1px 1%;
-	}
 	
+	/*  COLUMN SETUP  */
+	.flex-container {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		border-width: 0 2px 2px 0;
+		background-color: #ad8b8b3f;
+		
+	  }
+	  .flex-container .wrap { 
+		align-items: flex-start; 
+		align-self: flex-end;		
+		-ms-box-orient: horizontal;
+		display: flex;
+		justify-content: center;
+	  }
+
+	  p {
+		position: relative;
+		top: 100px;
+		left: 100px;
+		
+	   }	  
+				 
+	   p4 {
+		position: relative;
+		top: 100px;
+		left: 100px;
+		
+	   }	
+
 	
 	footer {
 		position: fixed;
 		bottom: 0;
+		left: 100px;
 	}
 
 	.footer-distributed {
