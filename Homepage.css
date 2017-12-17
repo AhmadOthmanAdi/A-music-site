@@ -1,7 +1,36 @@
-	
-	/* Responsive */
+/*SCROLLBAR--minimised*/
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 238, 255, 0.267); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.829); 
+}
 
 
+/* Responsive --minimised*/
+
+	@media (max-width: 767px) {
+		.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+			color: #fffefe;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
+			color: #000000;
+		}
+		.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+			color: #000000;
+			background-color: #e4f6ac;
+		}
+	}
+
+/*NAV BAR COLOR DaNCE ANIMATION--minimised*/
 	@-webkit-keyframes colorchange {
 		0%	 {
 			
@@ -36,6 +65,32 @@
 		.col {  margin: 1% 0 1% 0%; }
 		.span_1_of_4, .span_2_of_4, .span_3_of_4, .span_4_of_4 { width: 100%; }
 	}
+
+/*TRACKS YOU LIKE HEADER ANIMATION MEDIA--minimised*/
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes heademover {
+	100%
+	{border-width: thin 20px thin thin ;}
+
+	5%
+	{border-width: thin 20px thin thin ;}
+	
+}
+
+/* Standard syntax */
+@keyframes heademover {
+	100% 
+	{border-width: thin 20px thin thin ;}
+
+	5%
+	{border-width: thin 20px thin thin ;}
+	
+}
+
+
+
+
 
 	body {
 		overflow-x: hidden;
@@ -75,38 +130,36 @@
 		color: #fffefe;
 	}
 
-	.navbar-default .navbar-right {
+    .navbar-right {
 		font-size: 20px;
 		font-family: 'PT Mono', monospace;
-		position: absolute;
-		left: 25%;
+		position: relative;
+		right: 66%;
 		text-align: center;
 		margin: 0 auto;
 	}
 
-	.navbar-form .form-control {
-		font-size: 30px;
-		text-decoration: underline;
-		font-family: 'Contrail One', cursive;
-		}
-		.navbar-form  input{
-			letter-spacing: 5px;			
-			opacity: 0.5;
-			text-align:left;
-			
-		}
-
-	.navbar-form {
+	.form-control {
 		top: 1%;
 		position: fixed;
 		left: 60%;
 		text-align: center;
 		margin: 0 auto;
-	}
+		letter-spacing: 5px;			
+		opacity: 0.5;
+		text-align:left;
+		font-size: 30px;
+		text-decoration: underline;
+		font-family: 'Contrail One', cursive;
+		}
+
+
+	
+
 
 /* Disabled at the moment *
 	.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
-		color: #000000;
+		-or: #000000;
 	}
 
 	.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
@@ -131,19 +184,75 @@
 	.navbar-default .navbar-toggle .icon-bar {
 		background-color: #fffefe;
 	}
-
 	/*ENd of Navbar */
-	.jumbotron .btn{	
-		position: relative;
-		bottom: 1px;
-		right: 1px;
-		background-color: #ad8b8b3f;
-			
+
+
+	/*Container Fluid setup*/
+	.container-fluid {
+		padding: 0;
+		margin: 0%;
+		list-style: none;
+
+	  }
+	  .container-fluid{ 
+		display: flex;		
+		align-items: center; 
+		align-self: center;		
+		justify-content:flex-start;		
+	  }
+	  
+	/*JUMBOTRON*/
+.jumbotron{
+	background-size: cover;
+	background-color: #55b8c511;
+		background-repeat: no-repeat;
+	display: initial;
+	position: relative;
+	left: 20px;
+	height: 20px;
+	width: 20%;
+}		
+
+#jumbobutt{
+position: relative;
+text-align: right;
+margin: 0 auto;
+top: 40px;
+}	
+	  
+	  h1{
+		display: flex;
+		position: absolute;
+		bottom: 5%;
+		left: 0px;
+		border-style:solid;
+		border-width:thin thin thin  20px;
+		background-color: #47a6b33f;
+	}
+	h1:hover{
+		-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
+		animation: heademover 3s infinite;
 	}
 
+	  #BUTTHEAD{
+		display: initial;
+		position: relative;
+		bottom: 30px;
+		right: 50px;
+		color: rgba(179, 162, 81, 0.507);
+		background-color: transparent;
+	}
+
+	#CARROT{
+		color: #ff0000;	
+		position: relative;
+		left: 200px;	
+			border-width:10px;
 	
+	}
 	/*  COLUMN SETUP  */
-	.flex-container {
+	#FLEXTHIS{
+		flex-wrap: wrap;		
 		padding: 0;
 		margin: 0;
 		list-style: none;
@@ -151,28 +260,55 @@
 		background-color: #ad8b8b3f;
 		
 	  }
-	  .flex-container .wrap { 
-		align-items: flex-start; 
-		align-self: flex-end;		
+	  #wrapfirst { 
+		display: flex;		
+		align-items: stretch; 
+		align-self: flex-start;		
 		-ms-box-orient: horizontal;
-		display: flex;
 		justify-content: center;
 	  }
 
 	  p {
 		position: relative;
 		top: 100px;
-		left: 100px;
-		
 	   }	  
 				 
 	   p4 {
 		position: relative;
 		top: 100px;
-		left: 100px;
-		
 	   }	
 
+	   	  
+	/*  COLUMN SETUP  */
+	#FLEX{
+		flex-wrap: wrap;
+		top: 500px;
+		right: 930px;
+		position: relative;		
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		border-width: 0 2px 2px 0;
+		background-color: #ad8b8b3f;
+	  }
+	 #wrapflex { 
+		display: flex;		
+		align-items: baseline; 
+		align-self: flex-start;		
+		-ms-box-orient: horizontal;
+		justify-content: center;
+	  }
+	  p7 {
+		position: relative;
+        bottom: 100px
+	   }	  
+				 
+	   p8 {
+		position: relative;
+		bottom: 100px
+		
+	   }	
+/*END OF FIRST TWO MUSIC COLUMNS*/
 	
 	footer {
 		position: fixed;
@@ -184,43 +320,21 @@
 		background-color: #b8c0c7;
 		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 		box-sizing: border-box;
-		height: 170px;
-		width: 50%;
+		height: 115px;
+		width: 40%;
 		text-align: left;
-		padding: 50px 60px;
+		padding: 10px 100px;
 		margin-top: 80px;
 	}
 
-	.footer-distributed h3 {
-		position: relative;
-		bottom: 60px;
-		left: 79%;
-		color: #ffffff;
-		font-family: 'Bungee', cursive;
-		margin: 0;
-	}
-
-	.footer-distributed h3 span {
-		color: #5383d3;
-	}
-
-	.footer-distributed p.footer-links a {
-		display: inline-block;
-		line-height: 1.8;
-		text-decoration: none;
-		color: inherit;
-	}
-
-	.footer-distributed .footer-right {
+	.footer-right {
+		position: relative;		
 		float: right;
-		margin-top: 6px;
-		max-width: 180px;
-		position: relative;
-		top: 80px;
-		right: 60px;
+		bottom: 20px;
+		right: 33px;		
 	}
 
-	.footer-distributed .footer-right a {
+	.footer-right a {
 		display: inline-block;
 		width: 1px;
 		height: 50px;
@@ -230,64 +344,77 @@
 		color: #ffffff;
 		text-align: right;
 		line-height: 0px;
-		margin-left: 40px;
+		margin: 20px;
+
 	}
 
-	.footer-distributed .footer-center {
+	.footer-center {
+		display: inline-flex;		
 		color: #000000;
-		display: inline-flex;
 		width: 100%;
 		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	.footer-company-about {
-		line-height: 20px;
-		font-size: 20px;
-		font-weight: normal;
+	h3{
+		position: fixed;
+		bottom: 60px;
+		left: 30%;
+		color: #ffffff;
+		font-family: 'Bungee', cursive;
 		margin: 0;
-		position: relative;
-		top: 30px;
-		right: 230px;
+		color: #000000;
+		border-style:solid;
+		border-width:thin thin thin  20px;
+		background-color: #47a6b33f;
+	}
+	h3:hover{
+		-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
+		animation: heademover 3s infinite;
 	}
 
-	.footer-center .footer-trans-btn {
-		position: relative;
-		bottom: 70px;
-		right: 450px;
+	span{
+		display: inline;
+		font-family: 'Bungee', cursive;
+		font-size: 27px;
+		margin: 8px;
+		color: #5383d3;
+	}
+
+	.footer-trans-btn p1{
+		position: relative;		
+		float: left;
+		top: 20px;
 		color: rgb(0, 0, 0);
 		font-family: 'Berkshire Swash', cursive;
-		font-size: 25px;
+		font-size: 19px;
 		text-decoration: underline;
 		border: 1px solid #bebebe85;
-		border-radius: 10px;
+		border-radius: 9px;
 		text-transform: uppercase;
-		padding: 0px 0px;
 		-webkit-transition: background-color 1s ease-out;
 		-moz-transition: background-color 1s ease-out;
 		-o-transition: background-color 1s ease-out;
 		transition: background-color 1s ease-out;
 	}
 
-	.footer-center .footer-trans-btn:hover {
+	.footer-trans-btn p1:hover {
 		background-color: #818b94;
 		cursor: pointer;
 	}
 
-	/* Responsive */
-
-	@media (max-width: 767px) {
-		.navbar-default .navbar-nav .open .dropdown-menu>li>a {
-			color: #fffefe;
-		}
-		.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus {
-			color: #000000;
-		}
-		.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
-			color: #000000;
-			background-color: #e4f6ac;
-		}
+	.footer-company-about {
+		position: relative;		
+		float: left;
+		top: 69px;
+		right: 47%;			
+		font-size: 20px;
+		font-weight: normal;
+	
 	}
+
+
+	
 
 	
 	
