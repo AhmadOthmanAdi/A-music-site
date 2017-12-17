@@ -131,7 +131,7 @@
 	}
 
     .navbar-right {
-		font-size: 20px;
+		font-size: 2fpx;
 		font-family: 'PT Mono', monospace;
 		position: relative;
 		right: 66%;
@@ -140,9 +140,9 @@
 	}
 
 	.form-control {
+		position: relative;		
 		top: 1%;
-		position: fixed;
-		left: 60%;
+		left: 300%;
 		text-align: center;
 		margin: 0 auto;
 		letter-spacing: 5px;			
@@ -203,6 +203,7 @@
 	  
 	/*JUMBOTRON*/
 .jumbotron{
+	margin: 50px;
 	background-size: cover;
 	background-color: #55b8c511;
 		background-repeat: no-repeat;
@@ -247,8 +248,13 @@ top: 40px;
 		color: #ff0000;	
 		position: relative;
 		left: 200px;	
-			border-width:10px;
+        border-width:10px;
 	
+	}
+	p11{
+		position: relative;
+		left: 50px;
+		bottom: 100px;
 	}
 	/*  COLUMN SETUP  */
 	#FLEXTHIS{
