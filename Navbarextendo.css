@@ -62,7 +62,7 @@
 }
 
 .navbar-right {
-    font-size: 2fpx;
+    font-size: 20px;
     font-family: 'PT Mono', monospace;
     position: relative;
     right: 66%;
@@ -70,23 +70,41 @@
     margin: 0 auto;
 }
 
-.form-control {
+.navbar-left input {display: block;
     position: relative;		
-    top: 1%;
-    left: 300%;
-    text-align: center;
+    outline: none;
+    left: 330%;
     margin: 0 auto;
     letter-spacing: 5px;			
     opacity: 0.5;
     text-align:left;
-    font-size: 30px;
-    text-decoration: underline;
+    font-size:25px ;
     font-family: 'Contrail One', cursive;
+    border:groove 3px;
+    border-radius: 100px;
     }
-
-
-
-
+    input::-webkit-input-placeholder {
+        color: rgba(251,175,93,1); 
+        font-weight: normal;
+        text-decoration: underline;  
+        color: #000;
+        opacity: 0.5;
+        -webkit-transition: opacity 0.35s ease-in-out;
+        transition: opacity 0.35s ease-in-out;
+    }
+    input:focus::-webkit-input-placeholder {
+        color: transparent;
+        opacity: 0;
+        -webkit-transition: opacity 3s ease-in-out;
+        transition: opacity 3s ease-in-out;
+    }
+          /* Place Holder CSS for Focus */
+          input:hover::-webkit-input-placeholder {
+            opacity: 5;
+            -webkit-transition: opacity 3s ease-in-out;
+            transition: opacity 3s ease-in-out;
+          }
+           
 
 /* Disabled at the moment *
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
