@@ -1,13 +1,31 @@
   
   
-  .navbar {
-    background-color: #00000044;
-    border-color: transparent;
+  .navbar-collapse {
     
-    transition: all 0.5s ease;
+    background-color: #ccc7c744;
+    border-color: transparent;
+    transition: all 1s ease;
+}
+.navbar-collapse:hover{
+background-color: #000000e8
 }
 
-.navbar:hover {
-    background-color: #1f1b1b;
-    cursor: pointer;
+#pin{
+	font-family: 'Bungee', cursive;
+    position: relative;
+    float:center;
+    right: 145%;
+}
+
+
+#PIN :hover{
+    background-color:rgba(228, 19, 19, 0.603) 
+}
+
+a{
+    color: rgb(67, 68, 100);
+}
+
+a:hover{
+    color: white;
 }

@@ -1,19 +1,34 @@
-/*SCROLLBAR--minimised*/
-
-::-webkit-scrollbar {
-    width: 12px;
-}
- 
-::-webkit-scrollbar-track {
-    box-shadow: inset black; 
-    border-radius: 10px;
-}
- 
-::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    box-shadow: inset black; 
-}
-
+/*Background Scrolling effect*/
+@-webkit-keyframes scroll{
+	100%{
+	  background-position:0px -3000px;
+	}
+  }
+  
+  @-moz-keyframes scroll{
+	100%{
+	  background-position:0px -3000px;
+	}
+  }
+  
+  @-o-keyframes scroll{
+	100%{
+	  background-position:0px -3000px;
+	}
+  }
+  
+  @-ms-keyframes scroll{
+	100%{
+	  background-position:0px -3000px;
+	}
+  }
+  
+  @keyframes scroll{
+	100%{
+	  background-position:0px -3000px;
+	}
+  }
+  /*Scrolling background8*/
 
 	@media (max-width: 600px) {
 		.footer-distributed .footer-left, .footer-distributed .footer-right {
@@ -56,250 +71,221 @@
 	
 }
 
-
-
-
-
-	body {
+.overlay {
 		overflow-x: hidden;
+		z-index: -1;
+		background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+		-webkit-animation:100s scroll infinite linear;
+		-moz-animation:100s scroll infinite linear;
+		-o-animation:100s scroll infinite linear;
+		-ms-animation:100s scroll infinite linear;
+		animation:100s scroll infinite linear;
 	}
 
+.body{
+	height: 100%;
+	margin: 0;
+}
 	
 	/*Container Fluid setup*/
 	.container-fluid {
+		z-index: 1;
 		padding: 0;
 		margin: 0%;
 		list-style: none;
-
-	  }
-	  .container-fluid{ 
 		display: flex;		
 		align-items: center; 
 		align-self: center;		
-		justify-content:flex-start;		
+		justify-content:flex-start;	
 	  }
 	  
 	/*JUMBOTRON*/
-.jumbotron{
+#Jumbouno{
 	margin: 50px;
 	background-size: cover;
-	background-color: #55b8c511;
-		background-repeat: no-repeat;
-	display: initial;
+	background-color: transparent;
+	border-style: none;
+	display: inline-flex;
 	position: relative;
-	left: 20px;
-	height: 20px;
-	width: 20%;
+	left: 300px;
+	height:24%;
+	width: 50%;
+	background: url(Images/dust_scratches.png)repeat;		
+	background-size: 100%;	
+	
 }		
 
-#jumbobutt{
-position: relative;
-text-align: right;
-margin: 0 auto;
-top: 40px;
-}	
+
 	  
-	  h1{
-		display: flex;
-		position: absolute;
-		bottom: 5%;
-		left: 0px;
-		border-style:solid;
-		border-width:thin thin thin  20px;
-		background-color: #47a6b33f;
+    h1 {
+		  display: inline-flex;
+		position: relative;
+		bottom: 55px;
+		right: 30px;
+		width: 50%;
+		height: 100%;
+		border-style:groove;
+		border-width:thin thin thin  40px;
+		background-color: #47a6b323;
 	}
-	h1:hover{
+
+	h1:hover {
 		-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
 		animation: heademover 3s infinite;
 	}
 
 	  #BUTTHEAD{
-		display: initial;
+		display: inline;
 		position: relative;
-		bottom: 30px;
-		right: 50px;
-		color: rgba(179, 162, 81, 0.507);
+		top: 10px;
+		right: 60px;
+		color:#a147b3cc ;
 		background-color: transparent;
 	}
 
-	#CARROT{
-		color: #ff0000;	
+	#Jumboduos{
+		margin: 0px;
+		display: inline-flex;
 		position: relative;
-		left: 200px;	
-        border-width:10px;
-	
+		background-size: cover;
+		background-color: transparent;
+		background-repeat: no-repeat;
+		border-style: dashed;
+		top: 75px;
+		right: 48%;
+		width: 10%;
+		height:10px; 
 	}
-	p11{
-		position: relative;
-		left: 50px;
-		bottom: 100px;
-	}
-	/*  COLUMN SETUP  */
-	#FLEXTHIS{
-		flex-wrap: wrap;		
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		border-width: 0 2px 2px 0;
-		background-color: #ad8b8b3f;
-		
-	  }
-	  #wrapfirst { 
-		display: flex;		
-		align-items: stretch; 
-		align-self: flex-start;		
-		-ms-box-orient: horizontal;
-		justify-content: center;
-	  }
 
-	  p {
-		position: relative;
-		top: 100px;
-	   }	  
-				 
-	   p4 {
-		position: relative;
-		top: 100px;
-	   }	
-
-	   	  
-	/*  COLUMN SETUP  */
-	#FLEX{
-		flex-wrap: wrap;
-		top: 500px;
-		right: 930px;
-		position: relative;		
-		padding: 0;
-		margin: 0;
-		list-style: none;
-		border-width: 0 2px 2px 0;
-		background-color: #ad8b8b3f;
-	  }
-	 #wrapflex { 
-		display: flex;		
-		align-items: baseline; 
-		align-self: flex-start;		
-		-ms-box-orient: horizontal;
-		justify-content: center;
-	  }
-	  p7 {
-		position: relative;
-        bottom: 100px
-	   }	  
-				 
-	   p8 {
-		position: relative;
-		bottom: 100px
-		
-	   }	
+	Marquee{	
+		z-index: 1;
+				display: inline-flex;
+				position: relative;
+				font-weight: bolder;
+				padding-top: 5px;
+				top: 100px;
+				right: 300px;
+				width: 39em;
+				height: 3%;
+				background-color: rgba(208, 217, 224, 0.527);
+			}
+				  
+			.Secondbackground {
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;				
+				background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
+				
+				/* Set a specific height */
+				min-height: 500px; 
+							
+			}
 /*END OF FIRST TWO MUSIC COLUMNS*/
 	
-	footer {
-		position: fixed;
-		bottom: 0;
-		left: 100px;
-	}
+.footer-distributed {
+	position: fixed;
+	background: url(Images/vertical-waves.png)repeat;		
+	background-size: 100%;	
+	bottom: 0;
+	left: 10%;
+	z-index: 1;
+	-webkit-animation:200s scroll infinite linear;
+	-moz-animation:200s scroll infinite linear;
+	-o-animation:200s scroll infinite linear;
+	-ms-animation:200s scroll infinite linear;
+	animation:200s scroll infinite linear;
+}
 
-	.footer-distributed {
-		background-color: #b8c0c7;
-		box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-		box-sizing: border-box;
-		height: 115px;
-		width: 40%;
-		text-align: left;
-		padding: 10px 100px;
-		margin-top: 80px;
-	}
+.footer-distributed {
+	background-color: #b8c0c7;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	height: 115px;
+	width: 80%;
+	text-align: left;
+	padding: 10px 100px;
+	margin-top: 80px;
+}
 
-	.footer-right {
-		position: relative;		
-		float: right;
-		bottom: 20px;
-		right: 33px;		
-	}
+.footer-center {
+	display: inline;		
+	text-align: none;
+}
 
-	.footer-right a {
-		display: inline-block;
-		width: 1px;
-		height: 50px;
-		background-color: transparent;
-		border-radius: px;
-		font-size: 23px;
-		color: #ffffff;
-		text-align: right;
-		line-height: 0px;
-		margin: 20px;
+p3 {
+	position: fixed;
+	bottom: 10px;
+	left: 24%;
+	color: #ffffff;
+	font-family: 'Bungee', cursive;
+	font-size: 16px;
+	margin: 0;
+	color: #000000;
+	border-style:solid;
+	border-width:thin thin thin  20px;
+	background-color: #47a6b33f;
 
-	}
+}
+p3:hover {
+	-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
+	animation: heademover 3s infinite;
+}
 
-	.footer-center {
-		display: inline-flex;		
-		color: #000000;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
+span {
+	display: inline;
+	font-family: 'Bungee', cursive;
+	font-size: 16px;
+	margin: 8px;
+	color: #173c74;
+}
 
-	p3{
-		position: fixed;
-		bottom: 60px;
-		left: 30%;
-		color: #ffffff;
-		font-family: 'Bungee', cursive;
-		font-size: 16px;
-		margin: 0;
-		color: #000000;
-		border-style:solid;
-		border-width:thin thin thin  20px;
-		background-color: #47a6b33f;
-	}
-	p3:hover{
-		-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
-		animation: heademover 3s infinite;
-	}
+.footer-trans-btn p1{
+	z-index: 1;
+	position: relative;		
+	right: 80px;
+	top: 30px;
+	color: rgb(0, 0, 0);
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bolder;
+	font-size: 19px;
+	text-decoration: underline;
+	border:groove 1px  transparent;
+	border-radius: 9px;
+	text-transform: uppercase;
+	-webkit-transition: background-color 1s ease-out;
+	-moz-transition: background-color 1s ease-out;
+	-o-transition: background-color 1s ease-out;
+	transition: background-color 1s ease-out;
+}
 
-	span{
-		display: inline;
-		font-family: 'Bungee', cursive;
-		font-size: 16px;
-		margin: 8px;
-		color: #5383d3;
-	}
+.footer-trans-btn p1:hover {
+	background-color: #a0ccf1;
+	cursor: pointer;
+}
 
-	.footer-trans-btn p1{
-		position: relative;		
-		float: left;
-		top: 20px;
-		color: rgb(0, 0, 0);
-		font-family: 'Berkshire Swash', cursive;
-		font-size: 19px;
-		text-decoration: underline;
-		border:groove 1px  transparent;
-		border-radius :9px;
-		text-transform: uppercase;
-		-webkit-transition: background-color 1s ease-out;
-		-moz-transition: background-color 1s ease-out;
-		-o-transition: background-color 1s ease-out;
-		transition: background-color 1s ease-out;
-	}
+.footer-company-about {
+	display: inline;
+	position: relative;		
+	top:40px;
+	right:80px;			
+	font-size: 20px;
+	font-weight: lighter;
 
-	.footer-trans-btn p1:hover {
-		background-color: #818b94;
-		cursor: pointer;
-	}
+}
 
-	.footer-company-about {
-		position: relative;		
-		float: left;
-		top: 69px;
-		right: 47%;			
-		font-size: 20px;
-		font-weight: normal;
-	
-	}
+.footer-right a {	
+	position: relative;
+	bottom: 55px;
+	right: 90px;
+	background-color: transparent;
+	font-size: 15px;
+	text-decoration: underline;
+	color: #d68585;
+	text-align: left;
+	margin: 10px;
 
-
-	
+}
 
 	
 	
