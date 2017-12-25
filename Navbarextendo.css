@@ -21,14 +21,20 @@
 
 
         .navbar-default {
-    background-color: #ccc7c744;
+            background:url(Images/darkness.png) no-repeat fixed;
+    background-size: 100%;
+    background-position-x: 110em;
+    overflow-x: hidden;
+    background-attachment: fixed;
+    background-color: #000000;
     border-color: transparent;
-    transition: all 1s ease;
-    
+    transition: none;
+    height: 4em;
+   
 }
 
 .navbar-default:hover{
-background-color: #000000e8
+background-color: #30312f
 }
 
  .navbar-brand {
@@ -41,7 +47,7 @@ background-color: #000000e8
     color: #fceded;
     position: absolute;
     top: 1%;
-    left: 40%;
+    left: 24em;
     text-align: center;
     margin: 0 auto;
     letter-spacing: 5px;					
@@ -111,16 +117,18 @@ h2{
     top: 12px;
     right: 6%;
     margin: 0 auto;
-    letter-spacing: 3px;			
+    letter-spacing: 2px;		
+    color: rgba(228, 19, 19, 0.603) ;	
     text-align: left;
     text-decoration: wavy;
     font-size:20px ;
-    font-family: 'Berkshire Swash', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
     border-radius: 100px;
 }
 
 h2:hover{
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.842);
 }
 
 

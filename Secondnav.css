@@ -2,7 +2,7 @@
   
   .navbar-collapse {
     
-    background-color: #ccc7c744;
+    background-color: #bbdabbad;
     border-color: transparent;
     transition: all 1s ease;
 }
@@ -13,9 +13,10 @@ background-color: #000000e8
 #pin{
 	font-family: 'Bungee', cursive;
     position: relative;
-    float:center;
-    right: 145%;
-}
+    float: left;
+    outline: none;
+    right: 100em;
+    margin: 0 auto;}
 
 
 #PIN :hover{

@@ -19,9 +19,11 @@
     <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Secondnav.css">
     <!--This is the motherfucking GRID-->
     <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Musiccontainer.css">
+    <!--this  is our Footer Css file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Footer.css">
 
     <!--Complete CSS BooTstrap-->
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">        
 
     <!--our fonts-->
     <link href="https://fonts.googleapis.com/css?family=Contrail+One|PT+Mono" rel="stylesheet">
@@ -39,18 +41,20 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <body>
+        
+    <!--Columns-->
+   
+    
         <!--Overlay moves-->
-        <div class="overlay">
-
-
-            <!--imbeded navbar -->
-            <iframe src="C:\Users\´Najwa\Desktop\a music site\Navbarextendo.html" width="1900" height="50" frameBorder="0" scrolling="no"></iframe>
+        <div class="overlay" id="space1" >
 
             <!-- Primary Navbar -->
             <iframe src="C:\Users\´Najwa\Desktop\a music site\Secondnav.html" width="1900" height="50" frameBorder="0" scrolling="no"></iframe>
 
-            
-            <div class="container-fluid">
+             <!--imbeded navbar -->
+             <iframe src="C:\Users\´Najwa\Desktop\a music site\Navbarextendo.html" width="1900" height="50" frameBorder="0" scrolling="no"></iframe>
+
+            <div class="container-fluid" id="Containerfluidone">
                 <div class="jumbotron" id="Jumbouno">
 
                     <h1>Pick of the Week </h1>
@@ -58,10 +62,12 @@
                     <div class="jumbotron" id="Jumboduos">
 
                         <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
+
                             <i class="fa fa-retweet" aria-hidden="true"></i>
                         </div>
 
                         <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
+                            
                             <i class="fa fa-heart" aria-hidden="true"></i>
                         </div>
                     </div>
@@ -70,50 +76,44 @@
             </div>
 
             <!--Header-->
-            <iframe src="C:\Users\´Najwa\Desktop\a music site\Musiccontainer.html" width="100%" height="100%" frameBorder="no" scrolling="no"></iframe>
-            
+            <!--Our embeded Music Container-->
         </div>
-        <!--Our embeded Music Container-->
+
+            <iframe src="C:\Users\´Najwa\Desktop\a music site\Musiccontainer.html" width="100%" height="50%" frameBorder="no" scrolling="no"></iframe>
+
+            <div class="overlay" id="Space2">
 
         <div class="Secondbackground"></div>
-        
-        
-        
+
+        <div class="container-fluid" id="Containerfluidtwo">
+            <div class="jumbotron" id="Jumboduos">
+
+                <h1>Pick of the Week </h1>
+
+            </div>
+        </div>
+
+</div>
         <!--Footer section-->
-        <footer class="footer-distributed">
-            <div class="footer-center">
-                <p3>DEV'S
+        <iframe src="C:\Users\´Najwa\Desktop\a music site\Footer.html" width="100%" height="auto" frameBorder="no" scrolling="no">
 
-                    <span>Max & Tonie</span>
-                </p3>
-            </div>
-            </p3>
-            <div class="footer-trans-btn">
-                <p1> Drop a message </p1>
-            </div>
+        </iframe>
 
-            <div class="footer-company-about">
-                <p2>Company Name &copy; 2015</p2>
-            </div>
-
-            <div class="footer-right">
-
-                <a href="#">
-                    <i class="fa fa-facebook " aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-adjust " aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-wpexplorer " aria-hidden="true"></i>
-                </a>
-                <a href="#">
-                    <i class="fa fa-arrows " aria-hidden="true"></i>
-                </a>
-
-            </div>
-
-        </footer>
     </body>
+<script>
 
+/*This J script father is the class=overlay , id=Space1/2 and work with a class specified to follow mouse cruising effect*/
+    $(document).ready(function() {
+var movementStrength = 1;
+var height = movementStrength / $(window).height();
+var width = movementStrength / $(window).width();
+$(".overlay").mousemove(function(e){
+          var pageX = e.pageX - ($(window).width() / 2);
+          var pageY = e.pageY - ($(window).height() / 2);
+          var newvalueX = width * pageX * -100 - 100;
+          var newvalueY = height * pageY * -100 - 100;
+          $('.overlay').css("background-position", newvalueX+"px     "+newvalueY+"px");
+});
+});
+</script>
 </html>
