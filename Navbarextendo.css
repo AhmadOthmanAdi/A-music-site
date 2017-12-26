@@ -54,20 +54,20 @@ background-color: #30312f
     
 }
 
-.dropdown-toggle{
+.dropdown{
+    position: relative;
+    color: white;
     font-size: 20px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bolder;
-    position: relative;
-    right: 60em;
-    text-align: center;
-    margin: 0 auto;   
+    right: 20em;
+    margin: 10px ;   
     
 }
 
 
-.footer-trans-btn p1:hover {
-background-color: #a0ccf1;
+P3:hover {
+color: #a0ccf1;
 cursor: pointer;
 }
 
@@ -87,8 +87,6 @@ cursor: pointer;
     background-color: #ffffff;
     border-color: #0000000a;        
 }
-
-
 
 .form-control::-webkit-input-placeholder {
         font-weight: lighter;

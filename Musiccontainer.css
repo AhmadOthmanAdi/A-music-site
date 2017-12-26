@@ -29,6 +29,7 @@
 	}
   }
 
+  
 
 .grid-container {
     background-color: #00dbf8d7;
@@ -58,13 +59,15 @@
     transition: transform .5s ease-out;
 }
 
-     /*Load more Button*/
+     
+     
+    
 .LoadMore {
     opacity: 0.2;
     display: inline;
     position: relative;
     padding: 7px;
-    padding-right: 50px;
+    padding-right: 65px;
     top: 20px;
     left: 38%;
     color: rgb(255, 255, 255);    
@@ -73,13 +76,23 @@
     border-color: #fff;
     border-radius: 11px;
     box-shadow: 0 1px 1px #ccc;
-    background:url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/footer_lodyas.png);
-		-webkit-animation:10s scroll infinite linear;
+    background:url(Images/metal.png);
+		
+}
+
+.LoadMore{
+  -webkit-animation:10s scroll infinite linear;
 		-moz-animation:10s scroll infinite linear;
 		-o-animation:10s scroll infinite linear;
 		-ms-animation:10s scroll infinite linear;
 		animation:10s scroll infinite linear;
 }
+
+.LoadMore{
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
 
 .LoadMore:hover {
     opacity: 1;

@@ -64,23 +64,14 @@
 	overflow-x: hidden;
 	 background-attachment: fixed;
 	border-color: transparent;
-	transition: all 1s ease;
-	-webkit-animation:200s scroll infinite linear;
-	-moz-animation:200s scroll infinite linear;
-	-o-animation:200s scroll infinite linear;
-	-ms-animation:200s scroll infinite linear;
-	animation:200s scroll infinite linear;
-
+	
 }
 
-.overlay:hover{
+#space1:hover{
 	opacity: 1;
-	-webkit-transition: all 0.5s ease-out;
-	-moz-transition: all 0.5s ease-out;
-	-o-transition: all 0.5s ease-out;
-	transition: all 0.5s ease-out;
-	box-shadow: inset 0 0 0 0 rgb(0, 0, 0), 0 0 10px rgba(0,0,0,0.3);
+	
 }	
+
 	/*Container Fluid setup*/
 	#Containerfluidone {
 		z-index: 1;
@@ -119,11 +110,36 @@
 		border-style:groove;
 		border-width:thin thin thin  40px;
 		background-color: #47a6b323;
+		
 	}
 
 	h1:hover {
 		-webkit-animation: heademover 3s infinite; /* Chrome, Safari, Opera */
 		animation: heademover 3s infinite;
+	}
+
+/*JUMBO COLORS ARE ALMOST UNVISIBLE*/
+	#Jumboduos{ 
+		padding-bottom: 0%;
+		padding-top: 10%;
+    top: 50px;
+		position: relative;
+		right: 40%;
+		border-radius: 1px;
+		box-shadow: 0px 0px 0px 0px #eee7e70c;      
+		background-color: transparent;
+		
+		
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	-o-animation-duration: 1s;
+	animation-duration: 1s;
+	}
+
+	#Jumboduos:hover{
+		box-shadow: 0px 0px 0px 8px #e6dcdc36;   
+		cursor:pointer;
+    
 	}
 
 	  #BUTTHEAD{
@@ -133,6 +149,7 @@
 		right: 60px;
 		color:#a147b3cc ;
 		background-color: transparent;
+
 	}
 
 	Marquee{	
@@ -148,10 +165,10 @@
 				background-color: rgba(208, 217, 224, 0.527);
 			}
 				  
-			 #Space2 {
+			 #Space2{
 				z-index: -1;
 				overflow-x: hidden;
-				margin: 10	px;
+				margin: 0px;
 				background-size: cover;
 				background-color: transparent;
 				background-attachment: fixed;
@@ -160,27 +177,23 @@
 				border-style: none;
 				display: inline-flex;
 				position: relative;
-				left: 300px;
-				height:24%;
-				width: 50%;
-				background: url(Images/dust_scratches.png)repeat;		
+				left: 0px;
+				height:15%;
+				width: 100%;
+			}	  
+			#space2{
+      	background: url(Images/darkness.png)repeat;		
 				background-size: 100%;	
-		        align-self: center;		
-		        justify-content:flex-start;	
-			}
-        	#Jumboduos{
-		margin: 0px;
-		display: inline-flex;
-		position: relative;
-		background-size: cover;
-		background-color: transparent;
-		background-repeat: no-repeat;
-		border-style: dashed;
-		right: 48%;
-		width: 10%;
-		height:10px; 
-	}
+		    align-self: center;		
+				justify-content:flex-start;
 
-			
+	transition: all 1s ease;
+	-webkit-animation:200s scroll infinite linear;
+	-moz-animation:200s scroll infinite linear;
+	-o-animation:200s scroll infinite linear;
+	-ms-animation:200s scroll infinite linear;
+	animation:200s scroll infinite linear;
+
+			}
 /*END OF FIRST TWO MUSIC COLUMNS*/
 	

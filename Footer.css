@@ -49,11 +49,12 @@
 	bottom: 0;
 	left: 10%;
 	z-index: 1;
+	transition: all 1s ease;
 	-webkit-animation:200s scroll infinite linear;
 	-moz-animation:200s scroll infinite linear;
 	-o-animation:200s scroll infinite linear;
 	-ms-animation:200s scroll infinite linear;
-	animation:200s scroll infinite linear;
+	animation:200s scroll infinite linear;		
 }
 
 .footer-distributed {
