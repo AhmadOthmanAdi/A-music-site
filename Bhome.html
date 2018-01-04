@@ -23,8 +23,6 @@
     <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Footer.css">
     <!--Side bar-->
     <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\side nav.css">
-
-
     <!--Animate css Framework-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
     <!--Css Magic Framework-->
@@ -61,48 +59,47 @@
 
 
 
-            <div class="sidenav">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Clients</a>
-                <a href="#">Contact</a>
-            </div>
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
 
-            <div class="container-fluid" id="Containerfluidone">
+        <div class="container-fluid" id="Containerfluidone">
 
-                <div class="jumbotron" id="Jumbouno">
+            <div class="jumbotron" id="Jumbouno">
 
-                    <h1>Pick of the Week </h1>
+                <h1>Pick of the Week </h1>
 
-                    <div class="jumbotron" id="Jumboduos">
+                <div class="jumbotron" id="Jumboduos">
 
-                        <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
+                    <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
 
-                            <i class="fa fa-retweet" aria-hidden="true">
+                        <i class="fa fa-retweet" aria-hidden="true">
 
-                            </i>
+                        </i>
 
-                        </div>
+                    </div>
 
-                        <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
+                    <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
 
-                            <i class="fa fa-heart" aria-hidden="true">
+                        <i class="fa fa-heart" aria-hidden="true">
 
-                            </i>
+                        </i>
 
-                        </div>
                     </div>
                 </div>
-                <marquee behavior="scroll" direction="left" scrollamount="10">-----------currently under construction.-----------------------currently under construction.------------</marquee>
             </div>
+            <marquee behavior="scroll" direction="left" scrollamount="10">-----------currently under construction.-----------------------currently under construction.------------</marquee>
+        </div>
     </div>
 
-    <!--Header-->
     <!--Our embeded Music Container-->
 
     <iframe src="C:\Users\´Najwa\Desktop\a music site\Musiccontainer.html" width="100%" height="50%" frameBorder="no" scrolling="no"></iframe>
 
-
+<!--Continue-->
     <div class="overlay" id="Space2">
 
         <div class="Secondbackground">
@@ -118,15 +115,18 @@
 </body>
 <script>
 
+    /*Script indecating the animation on the click on our share buttons */
     $("#Jumboduos").click(function (vanishIn) {
         $(this).addClass('magictime vanishIn');
     });
 
+    /*Script indecating the animation of our sidenav*/
 
     $(".sidenav").addClass('animated slideInLeft');
 
 
     /*This J script father is the class=overlay , id=Space1/2 and work with a class specified to follow mouse cruising effect*/
+
     $(document).ready(function () {
         var movementStrength = 1;
         var height = movementStrength / $(window).height();

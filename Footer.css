@@ -138,14 +138,14 @@ span {
 	position: relative;
 	bottom: 55px;
 	right: 90px;
-	background-color: transparent;
 	font-size: 15px;
-	text-decoration: underline;
-	color: #d68585;
+	color: #000000;
 	text-align: left;
 	margin: 10px;
-
 }
 
-	
+	.footer-right a:hover{
+
+		background-color: rgba(255, 255, 255, 0.733);
+	}
 	

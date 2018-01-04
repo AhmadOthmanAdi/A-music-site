@@ -71,43 +71,30 @@ color: #a0ccf1;
 cursor: pointer;
 }
 
-
 .navbar-left input {
     position: fixed;		
     outline: none;
     left: 51%;
-    margin: 0 auto;
-    letter-spacing: 5px;			
+    margin: 0 auto; 
+    letter-spacing: 2px;			
     opacity: 0.8;
     text-align:left;
-    font-size:15px ;
     font-family: 'Contrail One', cursive;
+    font-size:15px ;
     border:groove 3px;
-    border-radius: 100px;
+    border-radius: 70px;
     background-color: #ffffff;
     border-color: #0000000a;        
 }
 
 .form-control::-webkit-input-placeholder {
-        font-weight: lighter;
-        text-decoration: underline;  
+    text-decoration: underline;  
+    font-weight: lighter;
         color: #000000;
-        opacity: 0.5;
         -webkit-transition: opacity 0.35s ease-in-out;
         transition: opacity 0.35s ease-in-out;
     }
-    .form-control:focus::-webkit-input-placeholder {
-        color: transparent;
-        opacity: 0;
-        -webkit-transition: opacity 3s ease-in-out;
-        transition: opacity 3s ease-in-out;
-    }
-          /* Place Holder CSS for Focus */
-          .form-control:hover::-webkit-input-placeholder {
-              color: rgb(0, 0, 0);
-            transition:  0.1s ease-in-out;
-          }
-
+    
 h2{
     display: block;
     position: fixed;		

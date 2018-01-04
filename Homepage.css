@@ -55,6 +55,7 @@
 .body{
 	height: 100%;
 	margin: 0;
+
 }
 
 #space1 {
@@ -147,7 +148,7 @@
 		position: relative;
 		top: 10px;
 		right: 60px;
-		color:#a147b3cc ;
+		color:#27414bcc ;
 		background-color: transparent;
 
 	}
@@ -162,28 +163,26 @@
 				right: 300px;
 				width: 39em;
 				height: 3%;
-				background-color: rgba(208, 217, 224, 0.527);
+				background-color: rgba(208, 217, 224, 0.315);
 			}
 				  
 			 #Space2{
 				z-index: -1;
 				overflow-x: hidden;
 				margin: 0px;
-				background-size: cover;
-				background-color: transparent;
-				background-attachment: fixed;
-				background-position: center;
-				background-size: cover;		
 				border-style: none;
 				display: inline-flex;
 				position: relative;
 				left: 0px;
-				height:15%;
+				height:50%;
 				width: 100%;
 			}	  
-			#space2{
-      	background: url(Images/darkness.png)repeat;		
-				background-size: 100%;	
+			#space2 {
+      	background: url(Images/Atmo2.jpg)repeat;		
+				background-color: transparent;
+				background-attachment: fixed;
+				background-position: center;
+				background-size: cover;			
 		    align-self: center;		
 				justify-content:flex-start;
 
