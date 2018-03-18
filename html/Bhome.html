@@ -1,0 +1,163 @@
+<!Doctype>
+<html lang "eng">
+
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title> 2 + 2 </title>
+
+    <!--this  is our main page Css file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\Homepage.css">
+    <!--this  is our imbeded navbar Css file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\Navbarextendo.css">
+    <!--this  is our second imbeded navbar Css file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\Secondnav.css">
+    <!--This is the motherfucking GRID-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\Musiccontainer.css">
+    <!--this  is our Footer Css file-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\Footer.css">
+    <!--Side bar-->
+    <link rel="stylesheet" type="text/css" href="C:\Users\´Najwa\Desktop\a music site\Css\side nav.css">
+    <!--Animate css Framework-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css">
+    <!--Css Magic Framework-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/magic/1.1.0/magic.css">
+    <!--Complete CSS BooTstrap-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--Your Embed CodesFontAwesome-->
+    <script src="https://use.fontawesome.com/103ff73bfa.js"></script>
+    <!--JS CSS BooTstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--Jqueryyyy-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+    <!--our fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|PT+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Columns-->
+    <!--Overlay moves-->
+    <div class="overlay" id="space1">
+
+        <!--imbeded navbar -->
+        <iframe src="C:\Users\´Najwa\Desktop\a music site\Html\Navbarextendo.html" width="1900" height="50" frameBorder="0" scrolling="no"></iframe>
+
+
+        <!-- Primary Navbar -->
+        <iframe src="C:\Users\´Najwa\Desktop\a music site\Html\Secondnav.html" width="1900" height="50" frameBorder="0" scrolling="no"></iframe>
+
+
+        <div class="sidenav">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="container-fluid" id="Containerfluidone">
+
+            <div class="jumbotron" id="Jumbouno">
+
+                <h1 id=h1-Header-music-page></h1>
+
+                <div class="jumbotron" id="Jumboduos">
+
+                    <div class="btn btn-secondary btn-lg" id="BUTTHEAD">
+
+                        <i class="fa fa-retweet" aria-hidden="true">
+
+                        </i>
+                    </div>
+
+
+                    <div class="btn btn-secondary btn-lg" id="BUTTHEAD1">
+
+                        <i class="fa fa-heart" aria-hidden="true">
+                        </i>
+
+                    </div>
+                </div>
+            </div>
+
+            <marquee behavior="scroll" direction="left" scrollamount="10">-----------currently under construction.-----------------------currently under construction.------------</marquee>
+
+        </div>
+    </div>
+
+    <!--Our embeded Music Container-->
+
+    <iframe src="C:\Users\´Najwa\Desktop\a music site\Html\Musiccontainer.html" width="100%" height="50%" frameBorder="no" scrolling="no"></iframe>
+
+    <!--Continue-->
+    <div class="overlay" id="Space2">
+
+        <div class="Secondbackground">
+
+            <h1 id="h1-article">News we choose</h1>
+            <p1 id="p1-date">08/01/18</p1>
+
+            <h2 id="h2-article-name">read this</h2>
+
+        </div>
+    </div>
+
+
+    <!--Footer section-->
+    <iframe src="C:\Users\´Najwa\Desktop\a music site\Html\Footer.html" width="100%" height="auto" frameBorder="no" scrolling="no"></iframe>
+    </iframe>
+
+</body>
+<script>
+
+    /*Script indecating the animation on the click on our share buttons */
+    $("#BUTTHEAD").click(function () {
+        $(this).addClass('magictime puffin');
+    });
+    $("#BUTTHEAD1").click(function () {
+        $(this).addClass('magictime puffin');
+    });
+    /*Script indecating the animation of our sidenav*/
+
+    $(".sidenav").addClass('animated slideInLeft');
+    $.fn.extend({
+        animateCss: function (animationName, callback) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function () {
+                $(this).removeClass('animated ' + animationName);
+                if (callback) {
+                    callback();
+                }
+            });
+            return this;
+        }
+    });
+
+    /*This J script father is the class=overlay , id=Space1/2 and work with a class specified to follow mouse cruising effect*/
+
+    $(document).ready(function () {
+        var movementStrength = 1;
+        var height = movementStrength / $(window).height();
+        var width = movementStrength / $(window).width();
+        $("#space1").mousemove(function (e) {
+            var pageX = e.pageX - ($(window).width() / 2);
+            var pageY = e.pageY - ($(window).height() / 2);
+            var newvalueX = width * pageX * -100 - 100;
+            var newvalueY = height * pageY * -100 - 100;
+            $("#space1").css("background-position", newvalueX + "px     " + newvalueY + "px");
+        });
+    });
+</script>
+
+</html>
