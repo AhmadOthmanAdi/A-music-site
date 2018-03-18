@@ -3,7 +3,7 @@
   .navbar-collapse {
     position: fixed;
     width: 100%;
-    background-color:#0c0e0ae5;
+    background-color:#7e857711;
     border-color: transparent;
     transition: all 0.5s ease;
 }
@@ -12,7 +12,7 @@
 }
 
 #pin{
-	font-family: 'Bungee', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
     position: relative;
     float: left;
     outline: none;

@@ -33,10 +33,10 @@
 .grid-container {
     display: grid;
     position: relative;
-    background-color: #7e8577e5;
+    background-color: #7e857711;
     top: 10%;
     left: 10%;
-    width: 80%;
+    width: 70%;
     height: 50%;
     padding: 7%;
     padding-left: 0%;
@@ -47,8 +47,6 @@
     align-items: stretch;		
 }
 
-
-
 .item-A {
     display:none;
     position: relative;
@@ -57,14 +55,13 @@
     border-width: 0 1px 1px 0;
     box-shadow: 0 1px 1px rgb(0, 0, 0) inset; 
     border: none 1% transparent; 
-    margin-top: -30%;
+    bottom: 100px;
+    left: 10%;
     height: 0%;
     width: 0%;
     background-color: transparent;
 }
   
-     
-    
 .LoadMore {
     opacity: 0.2;
     display: inline;
@@ -75,13 +72,12 @@
     color: rgb(255, 255, 255);    
     border-width: 0 1px 1px 0;
     border-style: groove;
-    border-color: transparent;
+color: black;
     border-radius: 11px;
     box-shadow: 0 1px 1px #ccc;
-    background:url(metal.png);
 		
 }
-
+/*/
 .LoadMore{
   -webkit-animation:10s scroll infinite linear;
 		-moz-animation:10s scroll infinite linear;
@@ -89,7 +85,7 @@
 		-ms-animation:10s scroll infinite linear;
 		animation:10s scroll infinite linear;
 }
-
+/**/
 .LoadMore{
   cursor: pointer;
   transform-style: preserve-3d;
@@ -100,10 +96,4 @@
     opacity: 1;
     text-decoration: underline;    
     color: rgb(255, 255, 255);
-}
-
-#arrow-bounce{ 
-  margin-top: -1%;
-  opacity: 0.2;
-
 }

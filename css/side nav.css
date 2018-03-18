@@ -4,7 +4,7 @@
 .sidenav {    
     overflow-x: hidden;
     position: absolute;
-    font-family: 'Contrail One', cursive;
+	font-family: 'Roboto Condensed', sans-serif;
     width:8%;
     background-color: transparent;
     padding-top: 2%;
